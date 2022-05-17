@@ -223,6 +223,7 @@ export class GuiModel {
                         },
                         
                         
+                        
                 ]
                 },
                 {
@@ -257,7 +258,7 @@ export class GuiModel {
                         {
                             "type": "backbutton",
                         },
-                        
+
                         {
                             "type": "newButton",
                             "name": "EditFriend",
