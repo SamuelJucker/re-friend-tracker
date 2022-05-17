@@ -301,6 +301,7 @@ export class GuiModel {
                             "search": true,
                             "url": "/group",
                             "page": "pageofgroup",
+                            
                         },
 
                        
