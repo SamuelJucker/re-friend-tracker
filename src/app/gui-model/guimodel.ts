@@ -82,6 +82,15 @@ export class GuiModel {
                             "width": 2,
                             "required": true
                         },
+                        {
+                            "id": "Comment",
+                            "type": "text",
+                            "name": "Kommentar",
+                            "width": 2,
+                            "required": true
+                        },
+                
+
                         
                         {
                             "type": "deleteButton",
@@ -111,6 +120,20 @@ export class GuiModel {
                             "readonly": true,
                             "form": "ActivityForm",
                             "width": 2
+                        },
+                        {
+                            "id": "CommentAct",
+                            "type": "text",
+                            "name": "Kommentar",
+                            "width": 2,
+                            "required": true
+                        },
+                        {
+                            "id": "date",
+                            "type": "date",
+                            "name": "Datum",
+                            "width": 2,
+                            "required": true
                         },
                         {
                             "type": "deleteButton",
@@ -147,6 +170,21 @@ export class GuiModel {
                             "width": 2,
                             "required": true
                         },
+                        {
+                            "id": "Creation Date",
+                            "type": "text",
+                            "name": "Creation Date",
+                            "width": 2,
+                            "required": true
+                        },
+                        {
+                            "id": "Kommentar",
+                            "type": "text",
+                            "name": "Kommentar",
+                            "width": 2,
+                            "required": true
+                        },
+
                         {
                             "type": "deleteButton",
                             "name": "Delete"
