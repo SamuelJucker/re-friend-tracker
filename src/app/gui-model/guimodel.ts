@@ -89,9 +89,9 @@ export class GuiModel {
                             "width": 2,
                             "required": true
                         },
-                
 
-                        
+
+
                         {
                             "type": "deleteButton",
                             "name": "Delete"
@@ -155,7 +155,7 @@ export class GuiModel {
                             "form": "LocationForm",
                             "width": 2
                         },
-                        
+
                     ]
                 },
                 {
@@ -232,7 +232,7 @@ export class GuiModel {
                             "icon": "fa-weixin",
                             "color": "red",
                             "page": "activitiespage",
-                           },
+                        },
 
                     ]
                 },
@@ -259,10 +259,10 @@ export class GuiModel {
                             "url": "/friend",
                             "page": "pageoffriend",
                         },
-                        
-                        
-                        
-                ]
+
+
+
+                    ]
                 },
                 {
                     "id": "locationspage",
@@ -316,9 +316,9 @@ export class GuiModel {
                                 "form": "AddActivityForm"
                             }
                         },
-                        
-            ]
-        },
+
+                    ]
+                },
                 {
                     "id": "groupspage",
                     "elementList": [
@@ -341,10 +341,11 @@ export class GuiModel {
                             "search": true,
                             "url": "/group",
                             "page": "pageofgroup",
-                            
-                        },
 
-                       
+                        },
+                        
+
+
                     ]
                 },
                 {
@@ -371,7 +372,7 @@ export class GuiModel {
                             "page": "pageofactivity",
                         },
 
-                       
+
                     ]
                 },
                 {
@@ -397,53 +398,57 @@ export class GuiModel {
                             "url": "/activity/:activityKey/friend",
                             "page": "pageoffriend",
                         },
+
+
+                    ]
+                },
+                {
+                    "id": "pageoflocation",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "NewActivity",
+                            "icon": "fa-weixin",
+                            "color": "green",
+                            "form": {
+                                "form": "AddActivityForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "icon": "fa-user",
+                            "color": "blue",
+                            "search": true,
+                            "url": "/location/:locationKey/activity",
+
+                        },
+
+
+                    ]
+                },
+                {
+                    "id": "pageofgroup",
+                    "elementList": [
                         
-                        
-            ]
-        },
-        {
-            "id": "pageoflocation",
-            "elementList": [
-                {
-                    "type": "backbutton",
+                        {
+                            "type": "list",
+                            "icon": "fa-weixin",
+                            "color": "wisteria",
+                            "search": true,
+                            "url": "/group/:groupkey/friend",
+                            
+                            },
+                            
+
+
+
+
+                    ]
                 },
-                {
-                    "type": "newButton",
-                    "name": "NewActivity",
-                    "icon": "fa-weixin",
-                    "color": "green",
-                    "form": {
-                        "form": "AddActivityForm"
-                    }
-                },
-                {
-                    "type": "list",
-                    "icon": "fa-user",
-                    "color": "blue",
-                    "search": true,
-                    "url": "/location/:locationKey/activity",
-                    
-                },
-                
-                
-    ]
-},
-{
-    "id": "pageofgroup",
-    "elementList": [
-        {
-            "type": "list",
-            "icon": "fa-user",
-            "color": "blue",
-            "search": true,
-            "url": "/group/:groupKey/friend" ,
-            
-        },  
-     
-        
-]
-},
-                
+
             ]
         }
     };
